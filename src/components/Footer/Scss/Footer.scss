@@ -1,0 +1,200 @@
+.Footer{
+    width: 100%;
+    background: linear-gradient(134.12deg, #E4FCFA 0%, #E4FDF5 100%);
+    .wrapper{
+        padding: 50px 200px;
+        @media (max-width:1510px){
+            padding: 50px 100px;
+        }
+        @media (max-width:1310px){
+            padding: 50px 50px;
+        }
+        @media (max-width:1140px){
+            padding: 50px 30px;
+        }        
+        .f1{                                   
+            align-items: flex-start;
+            justify-content: space-between;
+            @media (max-width:767px){
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                justify-content: space-between;
+            }
+            @media (max-width:550px){
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: space-between;
+            }
+            .c1{
+                padding: 10px;
+                @media (max-width:767px){
+                    width: 100%;
+                }
+                h3{
+                    @media (max-width:900px){
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    @media (max-width:900px){
+                        font-size: 12px;
+                    }
+                }
+                .icons{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    a{
+                        color: black;
+                    }
+                    i{
+                        font-size: 22px;
+                        color: black;
+                        @media (max-width:900px){
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+            .c2{
+                padding: 10px;
+                @media (max-width:767px){
+                    width: 100%;
+                }
+                ul{
+                    @media (max-width:767px){
+                        padding: 0;
+                    }
+                    li{
+                        list-style: none;
+                        padding: 0;
+                        a{                            
+                            text-decoration: none;
+                            color: black;
+                            opacity: 0.7;
+                            &:hover{
+                                text-decoration:underline;
+                            }
+                            @media (max-width:900px){
+                                font-size: 12px;
+                            }
+                            @media (max-width:767px){
+                                padding-left: 0;
+                                padding-right: 0;
+                            }
+                        }
+                    }
+                    .title{
+                        font-weight: 600;
+                        padding-left: 15px;
+                        margin-bottom: 10px;
+                        @media (max-width:900px){
+                            font-size: 12px;
+                        }
+                        @media (max-width:767px){
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+            .c3{
+                padding: 13px 10px;
+                display: block;
+                @media (max-width:767px){
+                    display: none;
+                }
+                h6{
+                    @media (max-width:900px){
+                        font-size: 12px;
+                    }
+                }
+                input{
+                    margin-top: 30px;
+                    padding: 13px;
+                    border-radius: 24px;
+                    outline: none;
+                    border: none;
+                    display: block;
+                    @media (max-width:900px){
+                        font-size: 12px;
+                        padding: 10px;
+                        margin-top: 25px;
+                    }
+                }
+                .subs-btn{
+                    background: linear-gradient(137.88deg, #1DE3CC 4.24%, #18E789 91.51%);
+                    border-radius: 24px;
+                    padding: 13px 30px;
+                    font-weight: 600;
+                    color: white;
+                    border: none;
+                    margin-top: 20px;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                    &:active{
+                        transform: scale(0.95);
+                    }
+                    @media (max-width:900px){
+                        font-size: 12px;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+            .c4{
+                padding: 13px 10px;
+                display: block;
+                width: 100%;
+                @media (min-width:767.1px){
+                    display: none;
+                }
+                h6{
+                    @media (max-width:900px){
+                        font-size: 12px;
+                    }
+                }
+                input{
+                    margin-top: 30px;
+                    padding: 13px;
+                    border-radius: 24px;
+                    outline: none;
+                    border: none;
+                    display: block;
+                    @media (max-width:1150px){
+                        padding: 10px;                        
+                        width: 90%;
+                    }
+                    @media (max-width:900px){
+                        font-size: 12px;
+                        padding: 10px;
+                        margin-top: 25px;
+                    }
+                    @media (max-width:400px){
+                        width: 100%;
+                    }
+                }
+                .subs-btn{
+                    background: linear-gradient(137.88deg, #1DE3CC 4.24%, #18E789 91.51%);
+                    border-radius: 24px;
+                    padding: 13px 30px;
+                    font-weight: 600;
+                    color: white;
+                    border: none;
+                    margin-top: 20px;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                    &:active{
+                        transform: scale(0.95);
+                    }
+                    @media (max-width:900px){
+                        font-size: 12px;
+                        padding: 10px 30px;
+                    }
+                }
+            }
+        }
+    }    
+}

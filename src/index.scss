@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    background: url('./components/Header/images/Frame.png') no-repeat;
+    background-size: 100% 100%;
+    // background-color: red;
+}
+
+.row{
+    --bs-gutter-x: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+.buy-ok{
+    position: fixed;
+    top: -150%;
+    transition: 0.4s;
+    z-index: 500005;
+    background: linear-gradient(128.77deg, #1DE3CC 14.64%, #18E789 85.07%); 
+    align-items: center;
+    justify-content: center;
+    padding: 70px 150px;
+    border-radius: 10px;
+    @media (max-width:500px){
+        width: 90%;
+        left: 5%;
+    }
+    @media (max-width:450px){
+        padding: 70px 30px;
+    }
+    h1{
+        color: white;
+        text-align: center;
+    }
+    .fa-times{
+        position: absolute;
+        color: white;
+        top: 30px;
+        left: 30px;
+        font-size: 28px;
+        cursor: pointer;
+    }
+    .btn{
+        padding: 10px 40px;
+        margin-top: 50px;
+        border: solid 2px white;
+        border-radius: 15px;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        -ms-border-radius: 15px;
+        -o-border-radius: 15px;
+        &:hover{
+            background-color: white;
+            color: darkcyan;
+        }
+        @media (max-width:500px){
+            margin-top: 20px;            
+        }
+    }
+}
+.show-modal{
+     top: 10%;
+}
+.contrast{
+    background-color: rgba(0, 0, 0, 0.699);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 500003;
+}
+.loader{
+    position: fixed;
+    z-index: 10000000000000001;
+    .load{
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        border: solid 10px white;
+        border-left-color: #1DE3CC;
+        border-top-color: #1DE3CC;
+        animation-name: loader;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes loader {
+    100%{
+        transform: rotate(360deg);
+    }
+}
